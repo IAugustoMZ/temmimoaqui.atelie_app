@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 580" fill="none">
+  <defs>
+    <radialGradient id="paper" cx=".52" cy=".4" r=".74">
+      <stop stop-color="#f5e6d7"/><stop offset="1" stop-color="#dfbdae"/>
+    </radialGradient>
+    <pattern id="grain" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="2" r=".43" fill="#805442" opacity=".19"/><circle cx="4" cy="6" r=".35" fill="#fff" opacity=".58"/>
+    </pattern>
+    <g id="stem" stroke="currentColor" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 174C45 142 82 96 99 23M41 137C26 122 25 105 32 91c12 15 15 28 9 46ZM52 127c15-25 34-30 51-28-13 16-26 25-51 28ZM67 105c-13-16-15-32-8-45 12 12 15 28 8 45ZM79 88c12-23 30-31 46-31-9 15-24 28-46 31ZM89 64c-8-13-10-25-4-37 9 10 10 24 4 37ZM96 41c0-19 8-30 18-37 1 16-6 28-18 37Z"/>
+      <path d="M36 140c-18-1-26-11-31-21 13 1 24 7 31 21ZM24 155c16-4 32-3 44 6-17 7-31 4-44-6Z"/>
+      <path d="M1 174c23-26 30-55 20-86m7 48C11 126 6 114 7 102m37 37c21-12 44-15 62-8m-7-103c0-10 3-18 9-25"/>
+    </g>
+    <g id="flower" stroke="currentColor" stroke-width="1">
+      <path d="M0 0c-13-15-3-26 2-16 7-14 16-3 9 7 14-4 17 9 4 10 8 11-4 17-10 6C0 19-13 12-7 5c-13-2-8-15 1-10Z"/><circle cx="3.5" cy=".5" r="2.2"/>
+    </g>
+  </defs>
+  <path fill="url(#paper)" d="M0 0h590v580H0z"/><path fill="url(#grain)" d="M0 0h590v580H0z"/>
+  <path d="M23 556V285a272 246 0 0 1 544 0v271Zm9-9V285a263 237 0 0 1 526 0v262Z" stroke="#fff4e6" opacity=".67"/>
+  <path d="M135 449V250a160 160 0 0 1 320 0v199ZM146 438V250a149 149 0 1 1 298 0v188Z" stroke="#a07457" opacity=".53"/>
+  <path d="M99 500h392m-15-7 15 7-15 7m-362-14-15 7 15 7" stroke="#a07457" opacity=".42"/>
+  <g color="#866349" opacity=".77">
+    <use href="#stem" transform="translate(23 536) rotate(-17) scale(1.12) translate(0 -174)"/>
+    <use href="#stem" transform="translate(45 554) rotate(48) scale(.94) translate(0 -174)"/>
+    <use href="#stem" transform="translate(565 545) scale(-1 1) rotate(-20) scale(1.08) translate(0 -174)"/>
+    <use href="#stem" transform="translate(548 555) scale(-1 1) rotate(58) scale(.85) translate(0 -174)"/>
+    <path d="M73 521C64 462 68 414 54 371m17 96c19-34 30-61 29-107m426 167c10-68 8-125 17-174m-10 104c-17-43-38-64-54-78" stroke="currentColor"/>
+    <use href="#flower" x="54" y="371"/><use href="#flower" x="100" y="359"/><use href="#flower" x="543" y="353"/><use href="#flower" x="479" y="380"/>
+  </g>
+  <circle cx="295" cy="265" r="75" fill="#fff6e8" fill-opacity=".48" stroke="#ac7e5b" stroke-dasharray="1 5"/>
+  <path d="M295 301c-4-3-36-22-36-43 0-20 26-24 36-6 11-18 36-14 36 6 0 20-32 40-36 43Z" stroke="#966752" stroke-width="1.4"/>
+  <path d="M243 209c0 6-3 9-9 9 6 0 9 3 9 9 0-6 3-9 9-9-6 0-9-3-9-9Zm106-8c0 8-4 12-12 12 8 0 12 4 12 12 0-8 4-12 12-12-8 0-12-4-12-12Z" stroke="#a07457"/>
+  <g fill="#fff8ec"><circle cx="107" cy="181" r="2"/><circle cx="472" cy="170" r="3"/><circle cx="414" cy="90" r="2"/><circle cx="190" cy="103" r="2"/><circle cx="499" cy="271" r="2"/><circle cx="73" cy="274" r="2"/></g>
+</svg>

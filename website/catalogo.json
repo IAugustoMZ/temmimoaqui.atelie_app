@@ -1,0 +1,234 @@
+{
+  "instagram": "https://www.instagram.com/temmimoaqui.atelie/",
+  "pagamento": "Pagamento via PIX. Os dados para pagamento serão informados durante o atendimento.",
+  "logo": {
+    "arquivo": "assets/images/logo/logo.jpg",
+    "alt": "Tem Mimo Aqui Ateliê",
+    "largura": 1254,
+    "altura": 1254,
+    "versoes": [
+      {
+        "arquivo": "assets/images/logo/logo-220.webp",
+        "largura": 220
+      }
+    ]
+  },
+  "categorias": {
+    "velas": "Velas Artesanais",
+    "aromatizadores": "Aromatizadores",
+    "kits": "Kits para Presentear",
+    "lembrancinhas": "Lembrancinhas",
+    "colecoes": "Coleções Especiais"
+  },
+  "produtos": [
+    {
+      "id": "mini-vela-baunilha",
+      "nome": "Mini vela de Baunilha",
+      "categoria": "velas",
+      "edicao": "pequenos-encantos",
+      "descricao": "Mini vela com aroma de baunilha.",
+      "preco": 15,
+      "imagem": "baunilha"
+    },
+    {
+      "id": "mini-vela-lavanda",
+      "nome": "Mini vela de Lavanda",
+      "categoria": "velas",
+      "edicao": "pequenos-encantos",
+      "descricao": "Mini vela com aroma de lavanda.",
+      "preco": 15,
+      "imagem": "lavanda"
+    },
+    {
+      "id": "mini-vela-capim-limao",
+      "nome": "Mini vela de Capim-limão",
+      "categoria": "velas",
+      "edicao": "pequenos-encantos",
+      "descricao": "Mini vela com aroma de capim-limão.",
+      "preco": 15,
+      "imagem": "capim-limao"
+    },
+    {
+      "id": "vela-150ml",
+      "nome": "Vela de 150 mL de Lavanda",
+      "categoria": "velas",
+      "edicao": "aromas-para-acolher",
+      "descricao": "Vela artesanal com aroma de lavanda, apresentada em caixa com laço.",
+      "preco": 42,
+      "imagem": "vela-embalada"
+    },
+    {
+      "id": "aromatizador",
+      "nome": "Aromatizador de 100 mL de Baunilha",
+      "categoria": "aromatizadores",
+      "edicao": "aromas-para-acolher",
+      "descricao": "Aromatizador com varetas e fragrância de baunilha.",
+      "preco": 31,
+      "imagem": "aromatizador"
+    },
+    {
+      "id": "kit-tres-velas",
+      "nome": "Kit com três velas de 40 mL",
+      "categoria": "kits",
+      "edicao": "tres-aromas",
+      "descricao": "Três velas artesanais nos aromas de baunilha, lavanda e capim-limão.",
+      "preco": 46.5,
+      "imagem": "tres-velas"
+    },
+    {
+      "id": "kit-presente",
+      "nome": "Kit Afeto na Sacolinha",
+      "categoria": "kits",
+      "edicao": "carinho-para-levar",
+      "descricao": "Aromatizador de 100 mL e vela de 40 mL, ambos de baunilha, com escova dobrável com espelho e sabonete.",
+      "preco": 70,
+      "imagem": "kits"
+    }
+  ],
+  "fotos": {
+    "kits": {
+      "arquivo": "assets/images/products/Ateliê de Mimos Artesanais.png",
+      "alt": "Conjuntos para presente em embalagens transparentes com alças douradas.",
+      "largura": 1536,
+      "altura": 1024,
+      "versoes": [
+        {
+          "arquivo": "assets/images/products/web/kits-480.webp",
+          "largura": 480
+        },
+        {
+          "arquivo": "assets/images/products/web/kits-1080.webp",
+          "largura": 1080
+        }
+      ]
+    },
+    "capim-limao": {
+      "arquivo": "assets/images/products/Cozy Handmade Candle Gift Set(1).png",
+      "alt": "Velas em potes com tampas de cortiça, incluindo uma com rótulo de capim-limão.",
+      "largura": 1536,
+      "altura": 1024,
+      "versoes": [
+        {
+          "arquivo": "assets/images/products/web/capim-limao-480.webp",
+          "largura": 480
+        },
+        {
+          "arquivo": "assets/images/products/web/capim-limao-1080.webp",
+          "largura": 1080
+        }
+      ]
+    },
+    "tres-velas": {
+      "arquivo": "assets/images/products/Cozy Handmade Candle Gift Set(2).png",
+      "alt": "Três velas de tampa de cortiça alinhadas em uma caixa branca.",
+      "largura": 1774,
+      "altura": 887,
+      "versoes": [
+        {
+          "arquivo": "assets/images/products/web/tres-velas-480.webp",
+          "largura": 480
+        },
+        {
+          "arquivo": "assets/images/products/web/tres-velas-1080.webp",
+          "largura": 1080
+        }
+      ]
+    },
+    "baunilha": {
+      "arquivo": "assets/images/products/Cozy Handmade Candle Gift Set.png",
+      "alt": "Velas em potes com tampas de cortiça, incluindo uma com rótulo de baunilha.",
+      "largura": 1536,
+      "altura": 1024,
+      "versoes": [
+        {
+          "arquivo": "assets/images/products/web/baunilha-480.webp",
+          "largura": 480
+        },
+        {
+          "arquivo": "assets/images/products/web/baunilha-1080.webp",
+          "largura": 1080
+        }
+      ]
+    },
+    "vela-embalada": {
+      "arquivo": "assets/images/products/Elegant Candle Gift Box with Golden Bow.png",
+      "alt": "Vela com tampa de madeira em caixa transparente com laço dourado.",
+      "largura": 1254,
+      "altura": 1254,
+      "versoes": [
+        {
+          "arquivo": "assets/images/products/web/vela-embalada-480.webp",
+          "largura": 480
+        },
+        {
+          "arquivo": "assets/images/products/web/vela-embalada-1080.webp",
+          "largura": 1080
+        }
+      ]
+    },
+    "aromatizador": {
+      "arquivo": "assets/images/products/Elegant Mimo Reed Diffuser Gift.png",
+      "alt": "Frasco de aromatizador com varetas e laço dourado, em embalagem transparente.",
+      "largura": 1024,
+      "altura": 1536,
+      "versoes": [
+        {
+          "arquivo": "assets/images/products/web/aromatizador-480.webp",
+          "largura": 480
+        },
+        {
+          "arquivo": "assets/images/products/web/aromatizador-1024.webp",
+          "largura": 1024
+        }
+      ]
+    },
+    "lavanda": {
+      "arquivo": "assets/images/products/Festive Lavender Favor Candle Collection.png",
+      "alt": "Velas para lembrancinha com tampas de cortiça, incluindo uma com rótulo de lavanda.",
+      "largura": 1536,
+      "altura": 1024,
+      "versoes": [
+        {
+          "arquivo": "assets/images/products/web/lavanda-480.webp",
+          "largura": 480
+        },
+        {
+          "arquivo": "assets/images/products/web/lavanda-1080.webp",
+          "largura": 1080
+        }
+      ]
+    }
+  },
+  "fotoInicio": "kits",
+  "fotoSobre": "vela-embalada",
+  "fotoInstagram": "baunilha",
+  "galeria": [
+    "capim-limao",
+    "baunilha",
+    "lavanda"
+  ],
+  "vitrine": [
+    "aromatizador",
+    "kit-tres-velas",
+    "kit-presente"
+  ],
+  "pdf": "assets/catalogo/catalogo-tem-mimo-aqui.pdf",
+  "edicoes": {
+    "pequenos-encantos": {
+      "titulo": "Pequenos encantos",
+      "texto": "Mini velas para iluminar gestos de carinho"
+    },
+    "aromas-para-acolher": {
+      "titulo": "Aromas para acolher",
+      "texto": "Detalhes que transformam o dia em um momento especial"
+    },
+    "tres-aromas": {
+      "titulo": "Três aromas, um carinho",
+      "texto": "Para presentear com significado"
+    },
+    "carinho-para-levar": {
+      "titulo": "Carinho para levar",
+      "texto": "Uma sacolinha repleta de afeto"
+    }
+  }
+}
