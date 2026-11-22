@@ -9,6 +9,7 @@
 .page-fallback-in main { animation: page-in 265ms var(--settle) both; }
 .mobile-nav[open] .mobile-panel { animation: menu-in 210ms var(--settle) both; }
 .contact-button { animation: contact-in 520ms var(--settle) both; }
+.photo-dialog[open] { animation: photo-in 245ms var(--settle) both; }
 .glimmer::before, .glimmer::after { animation: glimmer-in 3s ease-in-out both; }
 .glimmer::after { animation-delay: .45s; }
 
@@ -29,6 +30,7 @@
 @keyframes page-in { from { opacity: 0; transform: translateY(5px); } }
 @keyframes menu-in { from { opacity: 0; transform: translateY(-5px); } }
 @keyframes contact-in { from { opacity: 0; transform: translateY(6px); } }
+@keyframes photo-in { from { opacity: 0; transform: scale(.97); } }
 @keyframes glimmer-in { from { opacity: .15; } 55% { opacity: .85; } to { opacity: .45; } }
 @keyframes filter-away { to { opacity: .27; } }
 @keyframes filter-in { from { opacity: .6; } }

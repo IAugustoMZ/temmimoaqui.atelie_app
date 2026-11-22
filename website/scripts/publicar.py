@@ -75,7 +75,7 @@ def header(page, config):
     mark = image(config["logo"], "66px", logo=True) if config["logo"] else icon("heart")
     return f'''<header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="index.html"><span class="brand-mark">{mark}</span><span class="brand-name">Tem Mimo Aqui<span>Ateliê</span></span></a>
+    <a class="brand" href="index.html" aria-label="Tem Mimo Aqui Ateliê"><span class="brand-mark">{mark}</span><span class="brand-name">Tem <em>Mimo</em> Aqui<span>Ateliê</span></span></a>
     <nav class="desktop-nav" aria-label="Navegação principal"><ul>{navigation(page)}</ul></nav>
     {button("Encomendar", config, "secondary desktop-order")}
     <details class="mobile-nav">
@@ -125,9 +125,22 @@ def card(product, config, chapter=False):
     category = product["categoria"]
     kind = {"velas": "candle", "aromatizadores": "diffuser", "lembrancinhas": "heart"}.get(category, "gift")
     sizes = "(min-width: 80rem) 650px, (min-width: 54rem) 51vw, 90vw" if chapter else PRODUCT_SIZES
-    photo = image(config["fotos"][product["imagem"]], sizes) if product["imagem"] else placeholder(kind)
+    media_class = "product-media"
+    photo = placeholder(kind)
+    if product["imagem"]:
+        details = config["fotos"][product["imagem"]]
+        width, height = details["largura"], details["altura"]
+        if height > width:
+            media_class += " product-media--portrait"
+        elif width == height:
+            media_class += " product-media--square"
+        label = escape(f'Ampliar foto de {product["nome"]}')
+        photo = f'''<a class="photo-link" href="{asset(details["arquivo"])}" aria-label="{label}" data-photo-title="{escape(product["nome"])}">
+      {image(details, sizes)}
+      <span class="photo-zoom" aria-hidden="true">{icon("zoom")} Ampliar foto</span>
+    </a>'''
     return f'''<article class="product-card" data-category="{escape(category)}" data-reveal>
-  <div class="product-media">{photo}</div>
+  <div class="{media_class}">{photo}</div>
   <div class="product-copy">
     <p class="eyebrow product-category">{icon(kind)}{escape(config["categorias"][category])}</p>
     <h3>{escape(product["nome"])}</h3>
@@ -161,13 +174,29 @@ def catalog(config):
 
 
 def filters(config):
-    choices = {"todos": "Todos os mimos", **config["categorias"]}
+    categories_in_use = {product["categoria"] for product in config["produtos"]}
+    choices = {"todos": "Todos os mimos"}
+    choices.update(
+        (key, label) for key, label in config["categorias"].items() if key in categories_in_use
+    )
     markup = "".join(
         f'<button type="button" data-filter="{escape(key)}" aria-pressed="{str(key == "todos").lower()}">{escape(label)}</button>'
         for key, label in choices.items()
     )
     return (f'<div class="filters" hidden role="group" aria-label="Filtrar por categoria" '
             f'aria-controls="catalog-results">{markup}</div><p class="sr-only" id="catalog-status" role="status"></p>')
+
+
+def zoom_dialog():
+    return f'''<dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-title">
+  <div class="photo-dialog-header">
+    <h2 id="photo-title"></h2>
+    <form method="dialog">
+      <button type="submit" aria-label="Fechar foto ampliada" autofocus>{icon("close")}</button>
+    </form>
+  </div>
+  <img alt="">
+</dialog>'''
 
 
 def replace_region(source, name, replacement):
@@ -205,6 +234,8 @@ def render(page, config):
         "pagamento": f'<p class="payment">{escape(config["pagamento"])}</p>',
         "usuario": f'@{escape(urlsplit(config["instagram"]).path.strip("/"))}',
     }
+    if page in ("index.html", "catalogo.html"):
+        regions["ampliacao"] = zoom_dialog()
     if page == "index.html":
         by_id = {p["id"]: p for p in config["produtos"]}
         regions["hero"] = editorial_photo(config["fotoInicio"], config, hero=True)

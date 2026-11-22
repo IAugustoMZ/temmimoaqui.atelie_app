@@ -17,6 +17,46 @@
     });
   }
 
+  const photoDialog = document.querySelector('#photo-dialog');
+  if (typeof photoDialog?.showModal === 'function') {
+    const expanded = photoDialog.querySelector('img');
+    const title = photoDialog.querySelector('#photo-title');
+    let opener;
+
+    document.querySelectorAll('.photo-link').forEach((link) => {
+      link.setAttribute('aria-haspopup', 'dialog');
+      link.addEventListener('click', (event) => {
+        if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        const thumbnail = link.querySelector('img');
+        title.textContent = link.dataset.photoTitle;
+        expanded.alt = thumbnail.alt;
+        expanded.src = thumbnail.currentSrc || link.href;
+        try {
+          photoDialog.showModal();
+        } catch {
+          return;
+        }
+        event.preventDefault();
+        opener = link;
+        if (expanded.src === link.href) return;
+
+        const original = new Image();
+        original.onload = () => {
+          if (photoDialog.open && opener === link) expanded.src = original.src;
+        };
+        original.src = link.href;
+      });
+    });
+    photoDialog.addEventListener('click', (event) => {
+      if (event.target === photoDialog) photoDialog.close();
+    });
+    photoDialog.addEventListener('close', () => {
+      opener?.focus({ preventScroll: true });
+      opener = undefined;
+      expanded.removeAttribute('src');
+    });
+  }
+
   const filters = document.querySelector('.filters');
   if (!filters) return;
 

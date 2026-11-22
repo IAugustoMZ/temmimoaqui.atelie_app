@@ -26,7 +26,7 @@
       "nome": "Mini vela de Baunilha",
       "categoria": "velas",
       "edicao": "pequenos-encantos",
-      "descricao": "Mini vela com aroma de baunilha.",
+      "descricao": "Um carinho em tamanho mini, para deixar junto de um bilhete ou na mesa de alguém querido.",
       "preco": 15,
       "imagem": "baunilha"
     },
@@ -35,16 +35,16 @@
       "nome": "Mini vela de Lavanda",
       "categoria": "velas",
       "edicao": "pequenos-encantos",
-      "descricao": "Mini vela com aroma de lavanda.",
+      "descricao": "Para iluminar uma pausa, com um livro aberto e tempo para mais uma página.",
       "preco": 15,
       "imagem": "lavanda"
     },
     {
       "id": "mini-vela-capim-limao",
-      "nome": "Mini vela de Capim-limão",
+      "nome": "Mini vela de Capim-Limão",
       "categoria": "velas",
       "edicao": "pequenos-encantos",
-      "descricao": "Mini vela com aroma de capim-limão.",
+      "descricao": "Uma lembrança delicada para marcar um encontro ou agradecer pela companhia.",
       "preco": 15,
       "imagem": "capim-limao"
     },
@@ -53,7 +53,7 @@
       "nome": "Vela de 150 mL de Lavanda",
       "categoria": "velas",
       "edicao": "aromas-para-acolher",
-      "descricao": "Vela artesanal com aroma de lavanda, apresentada em caixa com laço.",
+      "descricao": "A caixa transparente com laço dourado já vem pronta para presentear.",
       "preco": 42,
       "imagem": "vela-embalada"
     },
@@ -62,7 +62,7 @@
       "nome": "Aromatizador de 100 mL de Baunilha",
       "categoria": "aromatizadores",
       "edicao": "aromas-para-acolher",
-      "descricao": "Aromatizador com varetas e fragrância de baunilha.",
+      "descricao": "As varetas perfumam aos poucos aquele cantinho que dá gosto de encontrar ao chegar.",
       "preco": 31,
       "imagem": "aromatizador"
     },
@@ -71,7 +71,7 @@
       "nome": "Kit com três velas de 40 mL",
       "categoria": "kits",
       "edicao": "tres-aromas",
-      "descricao": "Três velas artesanais nos aromas de baunilha, lavanda e capim-limão.",
+      "descricao": "Baunilha, Lavanda e Capim-Limão em uma caixa com mensagens de gratidão, amor e paz.",
       "preco": 46.5,
       "imagem": "tres-velas"
     },
@@ -80,7 +80,7 @@
       "nome": "Kit Afeto na Sacolinha",
       "categoria": "kits",
       "edicao": "carinho-para-levar",
-      "descricao": "Aromatizador de 100 mL e vela de 40 mL, ambos de baunilha, com escova dobrável com espelho e sabonete.",
+      "descricao": "Um aromatizador de 100 mL e uma vela de 40 mL, ambos de Baunilha, com sabonete e escova dobrável com espelho para levar na bolsa.",
       "preco": 70,
       "imagem": "kits"
     }
@@ -104,7 +104,7 @@
     },
     "capim-limao": {
       "arquivo": "assets/images/products/Cozy Handmade Candle Gift Set(1).png",
-      "alt": "Velas em potes com tampas de cortiça, incluindo uma com rótulo de capim-limão.",
+      "alt": "Velas em potes com tampas de cortiça, incluindo uma com rótulo de Capim-Limão.",
       "largura": 1536,
       "altura": 1024,
       "versoes": [
@@ -136,7 +136,7 @@
     },
     "baunilha": {
       "arquivo": "assets/images/products/Cozy Handmade Candle Gift Set.png",
-      "alt": "Velas em potes com tampas de cortiça, incluindo uma com rótulo de baunilha.",
+      "alt": "Velas em potes com tampas de cortiça, incluindo uma com rótulo de Baunilha.",
       "largura": 1536,
       "altura": 1024,
       "versoes": [
@@ -184,7 +184,7 @@
     },
     "lavanda": {
       "arquivo": "assets/images/products/Festive Lavender Favor Candle Collection.png",
-      "alt": "Velas para lembrancinha com tampas de cortiça, incluindo uma com rótulo de lavanda.",
+      "alt": "Velas para lembrancinha com tampas de cortiça, incluindo uma com rótulo de Lavanda.",
       "largura": 1536,
       "altura": 1024,
       "versoes": [
